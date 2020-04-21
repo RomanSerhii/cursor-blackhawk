@@ -6,9 +6,9 @@ git status - перевірка статусу проекту
 git add - добавляння файлів в staging area
 git commit - 
 git log - перегляд історії всіх комітів
-git checkout
-git branch
-git push
-git pull
-git merge
-git clone
+git checkout - перегляд попередньої версії проекту
+git branch - це гілки в проекті
+git push - загрузити зміни з локального репозиторію на віддалений
+git pull - стянути зміни з віддаленого рнозиорію на локальний
+git merge - об'єднання гілок в загальний бренч
+git clone - клонувати проект в себе на компі з віддаленого репозиторію
