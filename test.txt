@@ -1,0 +1,14 @@
+My HW #1 "VSC (Git, Github)"
+git config --global user.name blabla - ім'я користувача
+git config --global user.email blabal@bla - пошта користувача
+git init - створення репозорію
+git status - перевірка статусу проекту
+git add - добавляння файлів в staging area
+git commit - 
+git log - перегляд історії всіх комітів
+git checkout
+git branch
+git push
+git pull
+git merge
+git clone
