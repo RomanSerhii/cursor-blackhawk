@@ -1,0 +1,28 @@
+body {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: monospace;
+}
+h1,
+h2 {
+  text-align: center;
+  font-family: fantasy;
+}
+.section {
+  margin-left: 30px;
+  font-weight: 700;
+}
+.style-command {
+  background-color: grey;
+  padding: 0 2px;
+  border-radius: 5px;
+}
+.center {
+  text-align: center;
+}
+.backgrond-color {
+  background-color: yellow;
+  border-radius: 5px;
+  padding: 0 2px;
+}

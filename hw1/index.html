@@ -3,72 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>My HW #1 "VCS (Git, Github, gh-pages)"</title>
   </head>
   <body>
-    <h1>Main command's GIT</h1>
-    <ul>
-      <li>
-        git config --global user.name blabla - встановлює ім'я користувача
-        (автор коммітів)
-      </li>
-      <li>
-        git config --global user.email blabal@bla - встановлює адрес ел.пошти
-        користувача (автора коммітів)
-      </li>
-      <li>git init - створює новий локальний репозиторій із заданим іменем</li>
-      <li>
-        git status - перераховує всі нові або змінені файли, які вимагають
-        фіксації
-      </li>
-      <li>git add - індексує вказаний файл для наступного комміта</li>
-      <li>
-        git commit - вказуємо, що поточний зліпок проекту потрібно зберегти
-      </li>
-      <li>git log - історія коммітів поточної гілки</li>
-      <li>
-        git checkout - переключається на обрану гілку і оновлює робочу
-        директорію до її стану. Також дозволяє пересуватись між коммітами
-      </li>
-      <li>
-        git branch - створює нову гілку.Також дозволяє редагувати/видаляти гілки
-        (для цього лише потрібно дописати частинку команди -d)
-      </li>
-      <li>
-        git push - загружає всі зміни локальної гілки на віддалений репозиторій
-      </li>
-      <li>
-        git pull - загружає дані з віддаленого репозиторію на локальну гілку
-      </li>
-      <li>
-        git merge - вносить зміни вказаної гілки в основну гілку (об'єднує)
-      </li>
-      <li>git clone - робить копію репозиторію</li>
-    </ul>
-    <p>
-      .gitignore файл - з його допомогою можна ігнорувти перераховані файли і
-      директорії
-    </p>
+    <h1>Main GIT commands</h1>
+    <div class="section">
+      <ul>
+        <li>
+          <span class="style-command"
+            >git config --global user.name blabla</span
+          >
+          - встановлює ім'я користувача (автор коммітів)
+        </li>
+        <li>
+          <span class="style-command"
+            >git config --global user.email blabal@bla</span
+          >
+          - встановлює адрес ел.пошти користувача (автора коммітів)
+        </li>
+        <li>
+          <span class="style-command"> git init</span> - створює новий локальний
+          репозиторій із заданим іменем
+        </li>
+        <li>
+          <span class="style-command">git status</span> - перераховує всі нові
+          або змінені файли, які вимагають фіксації
+        </li>
+        <li>
+          <span class="style-command">git add</span> - індексує вказаний файл
+          для наступного комміта
+        </li>
+        <li>
+          <span class="style-command"> git commit</span> - вказуємо, що поточний
+          зліпок проекту потрібно зберегти
+        </li>
+        <li>
+          <span class="style-command">git log</span> - історія коммітів поточної
+          гілки
+        </li>
+        <li>
+          <span class="style-command"> git checkout</span> - переключається на
+          обрану гілку і оновлює робочу директорію до її стану. Також дозволяє
+          пересуватись між коммітами
+        </li>
+        <li>
+          <span class="style-command">git branch</span> - створює нову
+          гілку.Також дозволяє редагувати/видаляти гілки (для цього лише
+          потрібно дописати частинку команди -d)
+        </li>
+        <li>
+          <span class="style-command"> git push</span> - загружає всі зміни
+          локальної гілки на віддалений репозиторій
+        </li>
+        <li>
+          <span class="style-command"> git pull</span> - загружає дані з
+          віддаленого репозиторію на локальну гілку
+        </li>
+        <li>
+          <span class="style-command"> git merge</span> - вносить зміни вказаної
+          гілки в основну гілку (об'єднує)
+        </li>
+        <li>
+          <span class="style-command">git clone</span> - робить копію
+          репозиторію
+        </li>
+      </ul>
+      <p class="center">
+        <span class="backgrond-color"> .gitignore файл</span> - з його допомогою
+        можна ігнорувти перераховані файли і директорії
+      </p>
+    </div>
     <h2>Advanced</h2>
-    <p>Записати такi команди:</p>
-    <ul>
-      <li>
-        git revert - відкат комміта шляхом створення нового, протилежного йому
-        комміту, який потрібно відмінити
-      </li>
-      <li>
-        git reset - відміняє всі комміти після заданого залишаючи всі зміни в
-        робочій директорії
-      </li>
-      <li>
-        git rebase - перезаписує історію всіх коммітів та об'єднює в основну
-        гілку
-      </li>
-      <li>git cherry-pick - можна забрати комміти з однієї гілки в іншу</li>
-      <li>
-        git stash - тимчасово зберігає всі незафіксовані зміни відслідковуваних
-        файлів
-      </li>
-    </ul>
+    <div class="section">
+      <ul>
+        <li>
+          <span class="style-command">git revert</span> - відкат комміта шляхом
+          створення нового, протилежного йому комміту, який потрібно відмінити
+        </li>
+        <li>
+          <span class="style-command"> git reset</span> - відміняє всі комміти
+          після заданого залишаючи всі зміни в робочій директорії
+        </li>
+        <li>
+          <span class="style-command"> git rebase</span> - перезаписує історію
+          всіх коммітів та об'єднює в основну гілку
+        </li>
+        <li>
+          <span class="style-command">git cherry-pick</span> - можна забрати
+          комміти з однієї гілки в іншу
+        </li>
+        <li>
+          <span class="style-command">git stash</span> - тимчасово зберігає всі
+          незафіксовані зміни відслідковуваних файлів
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
