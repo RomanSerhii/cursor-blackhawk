@@ -1,0 +1,56 @@
+/*general*/
+body {
+  background: url(./image/colorfull-background_6724-65.jpg) no-repeat;
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
+  font-family: "Bitter", serif;
+}
+.main-conteiner {
+  text-align: center;
+}
+h1 {
+}
+/*tables*/
+.main-table {
+  border: 1px solid #333;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 50px auto;
+}
+.main-table td,
+th {
+  border: 1px solid #333;
+  padding: 0 10px;
+  color: #fff;
+}
+.main-table th {
+  color: black;
+}
+/*forms*/
+.form-conteiner_center {
+  text-align: left;
+  padding-left: 45%;
+}
+.transparent {
+  background-color: transparent;
+  border: 1px solid #333;
+  padding-left: 5px;
+}
+textarea::placeholder {
+  color: black;
+  text-align: center;
+  padding-top: 60px;
+}
+option {
+  background-color: rgb(245, 217, 245);
+}
+/*btton*/
+.btn-type {
+  background-color: rgb(245, 217, 245);
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 4px 8px;
+  margin-bottom: 50px;
+  letter-spacing: 0.2em;
+}

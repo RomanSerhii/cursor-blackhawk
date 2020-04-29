@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./image/1200px-HTML5_logo_and_wordmark.svg.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Raleway:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My HW #2 "HTML"</title>
+  </head>
+  <body>
+    <!--main-conteiner-->
+    <div class="main-conteiner">
+      <h1>Tables and Forms</h1>
+      <!--main-->
+      <main>
+        <!--table-->
+        <table class="main-table">
+          <thead>
+            <tr>
+              <th>Ім'я</th>
+              <th>Прізвище</th>
+              <th>Телефон</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Тарас</td>
+              <td>Антонюк</td>
+              <td>+38064123100</td>
+              <td>tarasantonyk@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Євген</td>
+              <td>Демидюк</td>
+              <td>+380644567890</td>
+              <td>yevgendemudyk@gmil.com</td>
+            </tr>
+            <tr>
+              <td>Орест</td>
+              <td>Копитко</td>
+              <td>380642345678</td>
+              <td>orestkopytko@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!--form-->
+        <div class="form-conteiner">
+          <form action="#" method="post" enctype="multipart/form-data"></form>
+          <input
+            class="transparent"
+            tabindex="1"
+            placeholder="Ім'я"
+            type="text"
+            name="userame"
+            value=""
+          />
+          <input
+            class="transparent"
+            tabindex="2"
+            placeholder="Прізвище"
+            type="text"
+            name="userlastname"
+            value=""
+          />
+          <h2>Яка Ваша стать?</h2>
+          <div class="form-conteiner_center">
+            <p>
+              <input
+                tabindex="3"
+                checked
+                type="radio"
+                name="gender"
+                value="male"
+              />Чоловіча
+            </p>
+
+            <p>
+              <input
+                tabindex="3"
+                type="radio"
+                name="gender"
+                value="female"
+              />Жіноча
+            </p>
+          </div>
+          <p>
+            <textarea
+              class="transparent"
+              tabindex="4"
+              placeholder="Напиши своє питання :-)"
+              name="text"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </p>
+          <select class="transparent" tabindex="5" name="city">
+            <option value="choose a city" selected disabled
+              >Вибрати місто</option
+            >
+            <option value="lviv">Львів</option>
+            <option value="kyiv">Київ</option>
+            <option value="dnipro">Дніпро</option>
+            <option value="kharkiv">Харків</option>
+            <option value="odessa">Одеса</option>
+          </select>
+          <h2>Вибір мови :</h2>
+          <div class="form-conteiner_center">
+            <p>
+              <input
+                tabindex="6"
+                type="checkbox"
+                name="choose language1"
+                value="yes"
+              />Українська
+            </p>
+            <p>
+              <input
+                tabindex="7"
+                type="checkbox"
+                name="choose language2"
+                value="yes"
+              />Англійська
+            </p>
+            <p>
+              <input
+                tabindex="8"
+                type="checkbox"
+                name="choose language3"
+                value="yes"
+              />Російська
+            </p>
+          </div>
+          <div class="form-conteiner_center">
+            <button class="btn-type" tabindex="9" type="submit">
+              Відправити
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
