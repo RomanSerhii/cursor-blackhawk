@@ -1,5 +1,5 @@
 body {
-  background: url(/img/_52683-25766.jpg) no-repeat;
+  background: url(./img/_52683-25766.jpg) no-repeat;
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -27,7 +27,6 @@ h1 {
   line-height: 30px;
   padding: 0px 10px;
 }
-
 .link-btn:hover {
   background-color: rgb(24, 195, 207);
   color: black;
