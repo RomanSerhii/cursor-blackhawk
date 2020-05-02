@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <!--table1-->
+      <div class="box1">
+      <table class="table">
+        <thead>
+          <tr>
+            <th><span>Name</span</th>
+            <th>Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>File.pdf</td>
+            <td>3 mins ago</td>
+            <td><span class="dots"></span><span class="dots"></span><span class="dots"></span></td>
+          </tr>
+          <tr>
+            <td>File.pdf</td>
+            <td>Yesterday</td>
+            <td><span class="dots"></span><span class="dots"></span><span class="dots"></span></td>
+          </tr>
+          <tr>
+            <td class="border-bottom">File.pdf</td>
+            <td class="border-bottom">June 1st, 2019</td>
+            <td class="border-bottom"><span class="dots"></span><span class="dots"></span><span class="dots"></span></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <!--table2-->
+      <div class="box2">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>
+                <input checked type="checkbox" id="all" name="choose file" value="yes" />
+                <label for="all"></label>
+                <span class="triangle">
+                  Name
+                </span>
+            </th>
+              <th>Date</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox" id="checkbox1" name="choose file" value="yes" />
+                <label for="checkbox1"></label>
+                File.pdf
+              </td>
+              <td>3 mins ago</td>
+              <td><span class="dots"></span><span class="dots"></span><span class="dots"></span></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" id="checkbox2" name="choose file" value="yes" />
+                <label for="checkbox2"></label>
+                File.pdf
+              </td>
+              <td>Yesterday</td>
+              <td><span class="dots"></span><span class="dots"></span><span class="dots"></span></td>
+            </tr>
+            <tr>
+              <td class="border-bottom">
+                <input type="checkbox" id="checkbox3" name="choose file" value="yes" />
+                <label for="checkbox3"></label>
+                File.pdf
+              </td>
+              <td class="border-bottom">June 1st, 2019</td>
+              <td class="border-bottom"><span class="dots"></span><span class="dots"></span><span class="dots"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--table3-->
+      <div class="box3">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>
+                <span class="triangle">Name</span></th>
+              <th>Date</th>
+              <th>
+                <input type="search" id="search" placeholder="Search">
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span><img class="table__img" src="./img/inbox.svg"></span>File.pdf</td>
+              <td>3 mins ago</td>
+              <td><span class="dots"></span><span class="dots"></span><span class="dots"></span></td>
+            </tr>
+            <tr>
+              <td><span><img class="table__img" src="./img/inbox.svg"></span>File.pdf</td>
+              <td>Yesterday</td>
+              <td><span class="dots"></span><span class="dots"></span><span class="dots"></span></td>
+            </tr>
+            <tr>
+              <td class="border-bottom"><span><img class="table__img" src="./img/inbox.svg"></span>File.pdf</td>
+              <td class="border-bottom">June 1st, 2019</td>
+              <td class="border-bottom"><span class="dots"></span><span class="dots"></span><span class="dots"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+  </body>
+</html>

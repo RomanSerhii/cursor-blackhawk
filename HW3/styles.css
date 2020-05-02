@@ -1,0 +1,113 @@
+/*general*/
+html {
+  font-size: 14px;
+}
+body {
+  background-color: #2c2c2c;
+}
+.conteiner {
+  margin: 50px 20px;
+}
+.box1,
+.box2 {
+  margin-bottom: 20px;
+}
+/*tables1*/
+table {
+  background-color: #2f2f2f;
+  table-layout: fixed;
+  width: 60%;
+  border-radius: 3px;
+  border: 1px solid #525252;
+  border-spacing: 0;
+}
+th,
+td {
+  font-size: 50%;
+  padding: 5px 10px;
+  border-bottom: 1px solid #525252;
+  text-align: left;
+  color: white;
+}
+tbody td:nth-child(2) {
+  color: #727272;
+}
+tbody td:nth-child(3) {
+  text-align: right;
+}
+span.triangle:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 4px solid white;
+  display: inline-block;
+  margin-left: 3px;
+}
+.dots {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #727272;
+  display: inline-block;
+  margin: 0.5px;
+}
+.border-bottom {
+  border-bottom: none;
+}
+/*tables2*/
+.box2 .dots {
+  background-color: #fff;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.box2 label:before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #3b3b3b;
+  border: 0.5px solid #828282;
+  border-radius: 1.5px;
+  position: relative;
+  top: 1px;
+  margin-right: 4px;
+}
+input[type="checkbox"]:checked + label:before {
+  background-image: url(./img/checkbox2.jpg);
+  background-size: cover;
+}
+
+/*tables3*/
+.box3 .dots {
+  background-color: #fff;
+}
+.table__img {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+}
+input[type="search"] {
+  max-width: 100px;
+  height: 15px;
+  float: right;
+  margin-right: 2px;
+  background-color: #444444;
+  background-image: url(./img/search.png);
+  background-size: 8px;
+  background-position: left 5% center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 2px;
+}
+input[placeholder="Search"] {
+  font-size: 8px;
+  padding-left: 15px;
+}
+thead th:last-child {
+  padding: 0;
+}
