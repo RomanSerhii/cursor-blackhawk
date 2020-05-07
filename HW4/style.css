@@ -1,0 +1,158 @@
+/*general*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*main*/
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: white;
+}
+.main-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      90deg,
+      rgba(213, 32, 71, 0.8) 0%,
+      rgba(238, 61, 27, 0.8) 100%
+    ),
+    url(./image/phone.jpg) no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+header a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  margin-right: 7px;
+}
+.navigation {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav a.active {
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav li:hover {
+  font-size: 1.5rem;
+  transition: 0.8s all;
+  color: black;
+}
+.language-selection {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.language-selection_triangle {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid white;
+  display: inline-block;
+  margin-left: 10px;
+}
+.language-selection img {
+  margin-right: 12px;
+}
+.header-btn {
+  padding: 12px 28px;
+  margin-left: 30px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #ffffff;
+}
+.header-btn:hover {
+  background: #ffffff;
+  color: #ed4c5c;
+  transition: 0.3s all;
+}
+/*info-box*/
+
+.info-box {
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+h1 {
+  font-size: 72px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.info-box_text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 486px;
+  margin: 40px auto 0;
+}
+.info-box_btn-white {
+  min-width: 160px;
+  padding: 17px 25px;
+  margin-top: 40px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ed4c5c;
+}
+.info-box_btn-white:hover {
+  background-color: transparent;
+  color: #ffffff;
+  transition: 0.3s all;
+}
