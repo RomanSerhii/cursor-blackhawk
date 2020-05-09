@@ -72,17 +72,26 @@ ul li {
 .sidebar {
   position: relative;
 }
-.sidebar img {
+.sidebar img:first-child {
   position: absolute;
   right: 1px;
+  z-index: 3;
+}
+.sidebar img:nth-child(2) {
+  position: absolute;
+  right: 107px;
+  z-index: 1;
+  top: 22px;
+}
+.sidebar img:nth-child(3) {
+  position: absolute;
+  z-index: 2;
+  left: 760px;
+  top: 22px;
 }
 /*section-2*/
 .contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 117px;
-  padding-bottom: 78px;
+  height: 500px;
 }
 .contact_left-side {
   max-width: 445px;
@@ -132,15 +141,24 @@ ul li {
   background: #ed4c5c;
   border-radius: 6px;
   margin-top: 25px;
+  margin-bottom: 80px;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
 }
 /*footer*/
+.footer-wrapper {
+  background-color: #fafafa;
+  padding-bottom: 85px;
+}
+.background-field {
+  background-color: #e5e5e5;
+  height: 45px;
+  color: transparent;
+}
 .footer-info {
   display: flex;
-  margin-top: 125px;
-  background: #fafafa;
+  margin-top: 85px;
 }
 .adress-box {
   flex-basis: 25%;
