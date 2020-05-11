@@ -97,18 +97,18 @@ ul li {
   max-width: 445px;
   height: 160px;
   display: inline-block;
+  margin-top: 115px;
 }
 .contact_right-side {
   position: relative;
   left: 525px;
-  top: -115px;
+  top: -160px;
 }
 .contact_title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   color: #000000;
-  margin-top: 115px;
 }
 .contact_subtitle {
   color: #000000;
@@ -145,6 +145,7 @@ ul li {
   border: none;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
 }
 /*footer*/
 .footer-wrapper {
