@@ -110,6 +110,7 @@ h6 {
 /*main*/
 
 body {
+  max-width: 1600px;
   background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
   color: #4b5d68;
   font-family: "AvenirLTStd-Book", Helvetica, sans-serif;
@@ -180,9 +181,10 @@ nav a.active {
 /*headline*/
 
 .headline {
-  position: relative;
   padding-bottom: 100px;
   margin-top: 150px;
+  background: url(./image/header/1.png) 100% 100% no-repeat;
+  background-size: auto auto;
 }
 .heading-box {
   width: 580px;
@@ -211,12 +213,7 @@ nav a.active {
   font-size: 1.13rem;
   color: #ffffff;
 }
-.headline-img {
-  position: absolute;
-  bottom: 0;
-  left: 362px;
-  max-width: 885px;
-}
+
 .headline-img img {
   max-width: 100%;
 }
