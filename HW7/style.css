@@ -5,6 +5,9 @@
 *:after {
   box-sizing: border-box;
 }
+menu {
+  padding: 0;
+}
 ul {
   list-style: none;
   padding: 0;
@@ -25,20 +28,33 @@ h5,
 h6 {
   margin: 0;
 }
+button {
+  border: none;
+}
 
 /*typography*/
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 h1 {
   font-size: 2.25rem;
-  line-height: 57px;
+  line-height: 1.6;
 }
 h2 {
-  font-size: 24px;
-  line-height: 38px;
+  font-size: 1.5rem;
+  line-height: 1.6;
 }
 h3 {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.62;
+  width: 151px;
 }
 
 /*button*/
@@ -53,6 +69,7 @@ h3 {
   font-size: 13px;
   line-height: 15px;
   color: #ffffff;
+  margin-right: 24px;
 }
 
 /* forms */
@@ -67,34 +84,187 @@ textarea {
   border: 1px solid #d0d0d0;
 }
 
-/*backgroud*/
-
-.background-grey {
-  background: #f5f5f7;
-  border-radius: 14px;
-}
-
-/*menu*/
-
-.black-menu {
-  background: #000000;
-  border-radius: 24px;
-  color: #ffffff;
-  flex-basis: 10%;
-}
-
 /*main*/
 
 body {
   min-width: 1100px;
   min-height: 600px;
-  background: #e5e5e5;
+  background: #ffffff;
   color: #000000;
   font-family: "Baloo Bhaina 2", cursive, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
   line-height: 1.5;
-  margin: 24px 67px 0 32px;
+  margin: 0;
   display: flex;
+}
+.background-grey {
+  background: #f5f5f7;
+  border-radius: 14px;
+}
+.subtitle {
+  font-family: "Roboto";
+  font-size: 13px;
+  line-height: 15px;
+  min-width: 135px;
+}
+
+/*menu*/
+.black-menu {
+  background: #000000;
+  border-radius: 24px;
+  color: #ffffff;
+  flex-basis: 9.17%;
+  margin: 24px 0 24px 32px;
+  text-align: center;
+  box-shadow: 20px 20px 42px #c1c1c1;
+}
+.black-menu li:first-child {
+  margin-top: 44px;
+  margin-bottom: 100px;
+}
+.black-menu li:nth-child(3) {
+  margin-top: 44px;
+}
+.black-menu li:nth-child(4) {
+  margin-top: 44px;
+}
+.black-menu li:nth-child(5) {
+  margin-top: 44px;
+}
+.black-menu li:nth-child(6) {
+  margin-top: 44px;
+}
+.black-menu li:last-child {
+  margin-top: 227px;
+  margin-bottom: 40px;
+}
+.item-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*main container*/
+
+.main-container {
+  flex-basis: 43.05%;
+  margin-left: 80px;
+  margin-top: 55px;
+}
+header {
+  position: relative;
+}
+h1 {
+  padding: 46px 0 0 32px;
+}
+.text {
+  padding: 0 0 40px 32px;
+}
+.illustration {
+  position: absolute;
+  top: -24px;
+  right: 104px;
+}
+.about {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.about__left-side {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.image {
+  width: 64px;
+  height: 64px;
+  background: #ffffff;
+  border-radius: 12px;
+  margin: 8px 24px 8px 8.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__left-side__progress {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 45px;
+  margin-right: 40px;
+}
+.about__left-side__progress p {
+  position: absolute;
+  left: 10px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 13px;
+}
+.about__right-side {
+  display: flex;
+  margin-left: 24px;
+}
+.circcle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.margin-right {
+  margin-right: 16px;
+}
+.courses {
+  margin-top: 40px;
+}
+.courses-box {
+  margin-top: 16px;
+}
+.courses-box_item {
+  display: flex;
+  align-items: center;
+}
+.courses-item_active {
+  color: #000000;
+}
+.courses-item_normal {
+  color: #000000;
+  opacity: 0.3;
+}
+.courses-box_item li + li {
+  margin-left: 30px;
+}
+.program-box {
+  margin-top: 10px;
+}
+.time-box {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+.rate-box {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.time-box_img {
+  align-self: baseline;
+  margin-right: 8px;
+}
+.rate-box_img {
+  align-self: baseline;
+  margin-right: 10px;
+}
+.rate-box p {
+  margin-right: 31px;
+}
+
+/*right-side*/
+
+.right-side-container {
+  flex-basis: 30.48%;
+  margin: 55px 68px 24px 64px;
 }
