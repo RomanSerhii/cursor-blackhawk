@@ -79,6 +79,10 @@ h3 {
   color: #ffffff;
   margin-right: 24px;
 }
+.btn:hover {
+  background-color: #000000;
+  opacity: 0.5;
+}
 
 /*main*/
 
@@ -159,6 +163,8 @@ h1 {
   padding: 46px 0 0 32px;
 }
 .text {
+  font-family: "Roboto";
+  font-weight: 400;
   padding: 0 0 40px 32px;
 }
 .illustration {
@@ -353,7 +359,7 @@ input[type="search"] {
   border-radius: 8px;
   background-image: url(./image/graphic-section/tick-icon.png);
   background-repeat: no-repeat;
-  background-position: right 8px center;
+  background-position: right 5px center;
   margin-left: auto;
   padding-top: 9px;
   padding-right: 16px;
