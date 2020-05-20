@@ -4,8 +4,17 @@
 *:after {
   box-sizing: border-box;
 }
-menu {
-  padding: 0;
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+button {
+  cursor: pointer;
+  border: none;
 }
 ul {
   list-style: none;
@@ -27,11 +36,8 @@ h5,
 h6 {
   margin: 0;
 }
-button {
-  border: none;
-}
+
 input[type="search"] {
-  -webkit-appearance: textfield;
   border: none;
   padding: 0;
 }
@@ -103,12 +109,12 @@ body {
 /*menu*/
 
 .black-menu {
+  width: 132px;
+  flex-shrink: 0;
   margin: 24px 0 24px 32px;
-  flex-basis: 9%;
   background: #000000;
   border-radius: 24px;
   box-shadow: 20px 20px 42px #c1c1c1;
-  min-width: 100px;
   color: #ffffff;
   text-align: center;
   padding-right: 15px;
@@ -142,7 +148,8 @@ body {
 /*main container*/
 
 .main-container {
-  margin-left: 40px;
+  flex-grow: 1;
+  margin-left: 70px;
   margin-top: 55px;
 }
 header {
@@ -260,7 +267,8 @@ h1 {
 /*right-side*/
 
 .right-side-container {
-  margin: 55px 68px 24px 30px;
+  flex-grow: 1;
+  margin: 55px 68px 24px 64px;
 }
 .right-side-container_top {
   display: flex;
@@ -288,6 +296,7 @@ input[type="search"] {
   margin-left: auto;
 }
 .notification-box {
+  margin-left: 34px;
   align-self: flex-start;
 }
 .avatar-box {
@@ -355,6 +364,10 @@ input[type="search"] {
 .graphic-box_image {
   margin-top: 32px;
 }
+.graphic-box_image img {
+  max-width: 100%;
+}
+
 .proposition {
   display: flex;
   align-items: center;
