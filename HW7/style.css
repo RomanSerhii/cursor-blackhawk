@@ -248,7 +248,11 @@ h1 {
 .program-box {
   margin-top: 10px;
 }
+.program-box button {
+  margin-left: auto;
+}
 .time-box {
+  width: 92px;
   display: flex;
   align-items: center;
   margin-left: 25px;
