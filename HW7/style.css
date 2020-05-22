@@ -165,11 +165,11 @@ h1 {
 .text {
   font-family: "Roboto";
   font-weight: 400;
-  padding: 0 0 40px 32px;
+  padding: 0 0 34px 32px;
 }
 .illustration {
   position: absolute;
-  top: -24px;
+  top: -30px;
   right: 104px;
 }
 .about {
