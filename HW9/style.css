@@ -203,7 +203,7 @@ section {
       rgba(255, 255, 255, 0) 67.14%
     ),
     url(./image/section-2/Cristiano-Ronaldo.jpg) no-repeat;
-  background-size: 60% 100%;
+  background-size: 55% 100%;
 }
 .what-it-does {
   display: flex;
@@ -218,12 +218,14 @@ section {
   margin-bottom: auto;
 }
 .what-it-does_photo-screen {
+  max-width: 360px;
   position: relative;
   z-index: 2;
 }
 .what-it-does_video-screen {
+  max-width: 360px;
   position: relative;
-  left: 106px;
+  left: 10%;
   bottom: 37px;
 }
 .what-it-does_text-box {
@@ -264,6 +266,10 @@ section {
   }
   .what-it-does_video-screen {
     left: 10%;
+  }
+  .what-it-does_video-screen img,
+  .what-it-does_photo-screen img {
+    max-width: 250px;
   }
 }
 
@@ -403,8 +409,8 @@ section {
 }
 .slider .slick-arrow {
   position: absolute;
-  top: 50%;
-  margin: -60px 0 0 0;
+  top: 25%;
+  /* margin: 0 0 0 0; */
   z-index: 20;
   font-size: 0;
   width: 60px;
@@ -445,6 +451,12 @@ section {
 }
 .slider-item.slick-center {
   opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .slider-item {
+    opacity: 1;
+  }
 }
 
 /* sponsors-section */
