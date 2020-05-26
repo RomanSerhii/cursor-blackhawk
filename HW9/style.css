@@ -537,6 +537,6 @@ section {
 }
 @media (max-width: 450px) {
   .footer-item-box .flex-box {
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
   }
 }
