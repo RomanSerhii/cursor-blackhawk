@@ -528,17 +528,8 @@
     <!-- get-up-close-section -->
 
     <section class="get-up-close-section">
-      <div class="section-bg">
-        <img
-          sizes="(max-width: 720px) 360px, 1440px"
-          srcset="
-            ./image/section-3/mobile/phone.png            360w,
-            ./image/get-up-section/get-up-section-bg.png 1440w
-          "
-          src="./image/get-up-section/get-up-section-bg.png"
-          alt=""
-        />
-      </div>
+      
+     
       <div class="container section-box">
         <div class="content-box">
           <div class="get-up-text">
@@ -563,6 +554,10 @@
           </div>
         </div>
       </div>
+       <picture class="section-bg">
+        <source srcset="./image/get-up-section/get-up-section-bg3.png" media="(min-width: 721px)">
+        <img src="./image/get-up-section/mobile/mobile-bg.png" alt="MDN">
+      </picture> 
     </section>
 
     <!-- footer -->
