@@ -91,6 +91,8 @@ section {
   right: 0;
   bottom: 0;
   left: 0;
+  line-height: 0;
+  display: block;
 }
 .section-bg img {
   width: 100%;
@@ -212,19 +214,104 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
-.what-it-does_image-box {
+.what-it-does_game-card {
   display: flex;
   flex-direction: column;
   flex-basis: 60%;
-  position: relative;
   margin-top: auto;
   margin-bottom: auto;
 }
 .what-it-does_photo-screen {
+  display: flex;
+  background: #ffffff;
+  border-radius: 4px 4px 0 0;
   max-width: 360px;
   position: relative;
   z-index: 2;
+  padding: 27px 15px 15px 15px;
 }
+.photo-screen_text-box p:first-child {
+  font-weight: 700;
+  line-height: 1.4;
+}
+.photo-screen_text-box p:nth-child(2) {
+  padding-top: 13px;
+  max-width: 77px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.33;
+  color: #000000;
+}
+.photo-screen_text-box p:nth-child(3) {
+  padding-top: 13px;
+  padding-bottom: 17px;
+  line-height: 1.3;
+  color: #000000;
+}
+.photo-screen_image-box {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.photo-screen_image-box img:first-child {
+  position: relative;
+  right: -19px;
+}
+.photo-screen_image-box img:nth-child(2) {
+  z-index: 54;
+  position: relative;
+}
+.switch-panel {
+  display: flex;
+  align-items: center;
+  max-width: 360px;
+  background: #eeeeee;
+  border-radius: 0px 0px 4px 4px;
+  padding: 13px 18px 11px 15px;
+  z-index: 22;
+}
+
+/*switch*/
+
+.switch-box {
+  display: flex;
+  margin-left: auto;
+}
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 32px;
+  height: 13px;
+  background: #979797;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+label:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  background: #fff;
+  border-radius: 21px;
+  transition: 0.3s;
+}
+input:checked + label {
+  background: #322fe6;
+}
+input:checked + label:after {
+  left: calc(100% - 0px);
+  transform: translateX(-70%);
+}
+/* finish switch */
+
 .what-it-does_video-screen {
   max-width: 360px;
   position: relative;
@@ -260,7 +347,7 @@ section {
     padding-bottom: 22px;
     order: 1;
   }
-  .what-it-does_image-box {
+  .what-it-does_game-card {
     padding: 70px 20px 40px;
     margin-left: -20px;
     margin-right: -20px;
@@ -272,25 +359,19 @@ section {
       ),
       url(./image/section-2/Cristiano-Ronaldo.jpg) 50% -2% no-repeat;
   }
-  .what-it-does_image-box img {
-    max-width: 100%;
-  }
-  .what-it-does_video-screen {
-    margin-left: auto;
-    left: auto;
-  }
-  .what-it-does_photo-screen {
-    margin-right: auto;
-  }
-  .what-it-does_video-screen,
-  .what-it-does_photo-screen {
+  .what-it-does_video-screen img {
     max-width: 73%;
   }
 }
 
 /*get-started-section*/
 
-.get-started h2 {
+.get-started-section {
+  background: url(./image/section-3/bg-section3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.get-started-section h2 {
   margin-top: 27px;
 }
 .get-started_text {
@@ -304,12 +385,72 @@ section {
 .get-started_text p:last-child {
   padding-bottom: 54px;
 }
-.get-started .container {
-  z-index: 1;
+.get-started-section .container {
+  flex-wrap: wrap;
 }
+.get-started {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  padding-top: 63px;
+  padding-bottom: 63px;
+}
+.get-started_image-box {
+  margin: 0 auto;
+  position: relative;
+}
+.get-started_image-box button {
+  width: 91px;
+  height: 91px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 3.13793px 15.6897px rgba(0, 0, 0, 0.25),
+    0px 2.51034px 6.27586px rgba(51, 51, 51, 0.1);
+}
+.get-started_image-box span:nth-child(2) {
+  display: block;
+  line-height: 1.8;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #00adee;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 21px;
+}
+.bell-total {
+  position: relative;
+}
+.button-box-top {
+  position: absolute;
+  top: 64px;
+  left: 30px;
+}
+.phone-icon {
+  position: absolute;
+  bottom: 150px;
+  right: -17px;
+}
+
 @media (max-width: 720px) {
-  .get-started .section-bg {
-    position: static;
+  .get-started-section {
+    background: none;
+  }
+  .get-started .content-box {
+    order: 5;
+    justify-content: center;
+    text-align: center;
+  }
+  .get-started .get-started_image-box {
+    order: 6;
+    flex-wrap: wrap;
+    background: url(./image/section-3/only-ellipse.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .get-started_image-box img {
+    max-width: 300px;
   }
 }
 
@@ -559,6 +700,10 @@ section {
   }
   .footer-item-box .flex-box {
     flex-wrap: nowrap;
+  }
+  .footer-social-box img:first-child {
+    margin-left: 0;
+    margin-right: 17px;
   }
 }
 @media (max-width: 450px) {

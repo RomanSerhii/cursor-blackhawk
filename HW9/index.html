@@ -44,9 +44,24 @@
 
     <section class="what-it-does-wrapper">
        <div class="what-it-does container">
-        <div class="what-it-does_image-box">
+        <div class="what-it-does_game-card">
           <div class="what-it-does_photo-screen">
-            <img src="./image/section-2/arsenal-vs-chelsea.png" alt="arsenal vs chelsea "/>
+            <div class="photo-screen_text-box">
+              <p>Sat, 12:35pm</p>
+              <p>Arsenal v Chelsea</p>
+              <p>Friendly Match</p>
+            </div>
+            <div class="photo-screen_image-box">
+              <img src="./image/section-2/arsenal-emblem.png" alt="arsenal emblem">
+              <img src="./image/section-2/chelsea-emblem.png" alt="chelsea emblem">
+            </div>
+          </div>
+          <div class="switch-panel">
+            <p>Turn on all match notifications</p>
+            <div class="switch-box">
+              <input type="checkbox" id="switch" />
+              <label for="switch"></label>
+            </div>
           </div>
           <div class="what-it-does_video-screen">
             <img src="./image/section-2/video-screen.png" alt="video screen" />
@@ -74,8 +89,8 @@
 
     <!-- Get started section -->
 
-    <section class="get-started">
-      <div class="container section-box">
+    <section class="get-started-section">
+      <div class="get-started container">
         <div class="content-box">
           <a class="link-brand-colour" href="#">GET STARTED</a>
           <h2>User-friendly Interface</h2>
@@ -93,11 +108,29 @@
           </div>
           <a class="link-brand-colour" href="#">Learn more</a>
         </div>
+        <div class="get-started_image-box">
+          <img src="./image/section-3/only-phone.png" alt="">
+          <div class="button-box-top">
+          <button class="bell-total"> 
+              <svg width="38" height="46" viewBox="0 0 38 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19 46C21.6125 46 23.75 43.8769 23.75 41.2821H14.25C14.25 43.8769 16.3638 46 19 46ZM33.25 31.8462V20.0513C33.25 12.8092 29.355 6.74667 22.5625 5.14256V3.53846C22.5625 1.58051 20.9713 0 19 0C17.0287 0 15.4375 1.58051 15.4375 3.53846V5.14256C8.62125 6.74667 4.75 12.7856 4.75 20.0513V31.8462L0 36.5641V38.9231H38V36.5641L33.25 31.8462Z"
+                  fill="#333333" />
+              </svg>
+                 <span>7</span>
+                </button>
+                </div>
+                <div class="phone-icon">
+             <button>
+            <svg width="29" height="38" viewBox="0 0 29 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25.0342 0.462712L8.36751 0.446045C6.53418 0.446045 5.03418 1.94604 5.03418 3.77938V8.77938H8.36751V7.11271H25.0342V30.446H8.36751V28.7794H5.03418V33.7794C5.03418 35.6127 6.53418 37.1127 8.36751 37.1127H25.0342C26.8675 37.1127 28.3675 35.6127 28.3675 33.7794V3.77938C28.3675 1.94604 26.8675 0.462712 25.0342 0.462712ZM11.7008 23.7794H15.0342V12.1127H3.36751V15.446H9.35085L0.0341797 24.7627L2.38418 27.1127L11.7008 17.796V23.7794Z"
+                fill="#333333" />
+            </svg>
+          </button>
+          </div>
+        </div>
       </div>
-      <picture class="section-bg">
-          <source srcset="./image/section-3/bg-section3.png" media="(min-width: 721px)">
-          <img src="./image/section-3/mobile/phone_1.png" alt="MDN">
-      </picture>
     </section>
 
     <!-- Features-section -->
@@ -632,9 +665,9 @@
           </ul>
         </div>
         <div class="footer-social-box flex-box">
-            <img src="./image/footer/twitter-logo.png" alt="" />
-            <img src="./image/footer/facebook-logo.png" alt="" />
-            <img src="./image/footer/instagram-logo.png" alt="" />
+           <a href="#"><img src="./image/footer/twitter-logo.png" alt="" /></a>
+           <a href="#"><img src="./image/footer/facebook-logo.png" alt="" /></a>
+           <a href="#"><img src="./image/footer/instagram-logo.png" alt="" /></a>
           </div>
         </div>
       </div>
