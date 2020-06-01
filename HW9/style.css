@@ -399,7 +399,7 @@ input:checked + label:after {
   padding-bottom: 63px;
 }
 .get-started_image-box {
-  margin: 0 auto;
+  margin-left: 18%;
   position: relative;
 }
 .get-started_image-box button {
@@ -454,6 +454,9 @@ input:checked + label:after {
     background: url(./image/section-3/only-ellipse.png);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .get-started_image-box {
+    margin: 0 auto;
   }
   .get-started_image-box img {
     max-width: 300px;
