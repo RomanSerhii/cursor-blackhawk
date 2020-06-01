@@ -336,6 +336,9 @@ input:checked + label:after {
   padding-bottom: 22px;
 }
 @media (max-width: 720px) {
+  .what-it-does_video-screen {
+    max-width: 250px;
+  }
   .what-it-does {
     flex-direction: column;
   }
@@ -437,6 +440,9 @@ input:checked + label:after {
   .get-started-section {
     background: none;
   }
+  .get-started.container {
+    justify-content: center;
+  }
   .get-started .content-box {
     order: 5;
     justify-content: center;
@@ -451,6 +457,15 @@ input:checked + label:after {
   }
   .get-started_image-box img {
     max-width: 300px;
+  }
+  .phone-icon {
+    position: absolute;
+    bottom: 122px;
+    right: 4px;
+  }
+  button {
+    max-width: 71px;
+    max-height: 71px;
   }
 }
 
