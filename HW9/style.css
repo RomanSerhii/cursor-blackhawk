@@ -363,7 +363,7 @@ input:checked + label:after {
       url(./image/section-2/Cristiano-Ronaldo.jpg) 50% -2% no-repeat;
   }
   .what-it-does_video-screen img {
-    max-width: 73%;
+    max-width: 100%;
   }
 }
 
@@ -435,13 +435,30 @@ input:checked + label:after {
   bottom: 150px;
   right: -17px;
 }
-
+@media (min-width: 1100px) {
+  .basket-total {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .get-started-section {
+    background: none;
+  }
+  .phone-icon-total {
+    display: none;
+  }
+  .get-started.container {
+    justify-content: center;
+    text-align: center;
+  }
+}
 @media (max-width: 720px) {
   .get-started-section {
     background: none;
   }
   .get-started.container {
     justify-content: center;
+    text-align: center;
   }
   .get-started .content-box {
     order: 5;
@@ -469,6 +486,13 @@ input:checked + label:after {
   button {
     max-width: 71px;
     max-height: 71px;
+  }
+  .get-started_image-box span:nth-child(2) {
+    top: 12px;
+    right: 10px;
+  }
+  .basket-total_color {
+    background: #40b756 !important;
   }
 }
 
