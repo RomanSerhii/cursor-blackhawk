@@ -1,0 +1,63 @@
+.form-inline .form-control {
+  font-size: 14px;
+  line-height: 17px;
+}
+.navbar-brand svg {
+  max-width: 100%;
+}
+.btn {
+  background: #4094ef;
+  border-radius: 3px;
+  width: 97px;
+  height: 29px;
+}
+.btn-primary {
+  margin-right: 8px;
+  background: #4094ef;
+  border-radius: 3px;
+}
+.btn-secondary {
+  margin-right: 8px;
+}
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.nav-tabs {
+  border-bottom: none;
+  border-top: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+}
+.nav-tabs .nav-link {
+  padding: 19px 0;
+  border: none;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  letter-spacing: 0.09em;
+  color: #8f8f8f;
+  border-radius: 0;
+  margin-top: -1px;
+  border-top: 1px solid transparent;
+  margin-left: 27px;
+  margin-right: 27px;
+  display: flex;
+  text-transform: uppercase;
+}
+.nav-tabs .nav-link.active {
+  color: #262626;
+  border-color: #262626;
+}
+.nav-tabs .nav-link svg {
+  fill: #8e8e8e;
+  margin-right: 5px;
+}
+.nav-tabs .nav-link.active svg {
+  fill: #262626;
+}

@@ -1,0 +1,187 @@
+/*fonts*/
+@font-face {
+  font-family: "HelveticaRegular";
+  src: url("../fonts/HelveticaRegular.eot");
+  src: local("☺"), url("fonts/HelveticaRegular.woff") format("woff"),
+    url("fonts/HelveticaRegular.ttf") format("truetype"),
+    url("fonts/HelveticaRegular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaBold";
+  src: url("../fonts/HelveticaBold.eot");
+  src: local("☺"), url("fonts/HelveticaBold.woff") format("woff"),
+    url("fonts/HelveticaBold.ttf") format("truetype"),
+    url("fonts/HelveticaBold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*main*/
+
+body {
+  background-color: #fafafa;
+  color: #262626;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.6;
+  margin: 0;
+}
+.my-avatar {
+  display: inline-block;
+  padding: 2px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  line-height: 0;
+}
+a[href*="instagram"] {
+  word-break: break-all;
+}
+
+/*header*/
+
+header {
+  background-color: #ffffff;
+  padding-top: 9px;
+}
+.search {
+  background-image: url(./image/header/search.png);
+  background-size: 9px;
+  background-position: left 5px center;
+  background-repeat: no-repeat;
+}
+.my-avatar img {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+}
+.my-avatar--sm img {
+  width: 22px;
+  height: 22px;
+}
+.navbar-nav li {
+  padding-left: 15px;
+}
+.messege-box {
+  position: relative;
+  display: inline-block;
+}
+.messege-box__total {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #dc565b;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 18px;
+  position: absolute;
+  right: -8px;
+  top: -4px;
+}
+
+/*info-section*/
+
+.button-small {
+  width: 33px;
+  height: 29px;
+}
+span.triangle {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid white;
+  display: inline-block;
+}
+.name-text {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  padding-right: 26px;
+  display: inline-block;
+}
+.button-more {
+  background: none;
+  border: none;
+  vertical-align: middle;
+}
+.button-more:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+.button-more span {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #262626;
+  border-radius: 50%;
+}
+.followers-box {
+  padding-top: 24px;
+  padding-bottom: 21px;
+}
+.followers-box-text {
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+.followers-box span:first-child {
+  padding-right: 39px;
+}
+.followers-box span:nth-child(2) {
+  padding-right: 35px;
+}
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+/* avatar list */
+
+.avatar-list {
+  display: flex;
+  margin-top: 52px;
+  flex-wrap: wrap;
+}
+.avatar-list li {
+  margin-right: 42px;
+  margin-bottom: 30px;
+}
+.avatar-special-box {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+}
+.avatar-special-box__title {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: #262626;
+}
+/* my image list */
+
+.my-image-list img {
+  max-width: 100%;
+}
+.my-image-list {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.my-image-list .col-4 {
+  padding: 0 5px 10px 5px;
+}
+@media (min-width: 992px) {
+  .my-image-list .col-4 {
+    padding: 0 25px 50px 25px;
+  }
+  .my-image-list {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+}
