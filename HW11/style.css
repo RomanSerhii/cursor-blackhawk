@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  color: #fff;
+  box-sizing: border-box;
+}
+.star-wars {
+  background-color: black;
+  min-height: 50vh;
+}
+.star-wars_box {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px 0 100px;
+}
+.star-wars_box span {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 150px;
+  border-bottom: 5px solid #fff;
+}
+.star-wars_box span:first-child::before {
+  content: ".";
+  color: transparent;
+  position: absolute;
+  left: -40px;
+  bottom: -5px;
+  width: 25px;
+  border-bottom: 5px solid #fff;
+}
+.second-line {
+  position: absolute;
+  right: 40px;
+}
+.second-line::after {
+  content: ".";
+  color: transparent;
+  position: absolute;
+  right: -40px;
+  bottom: -5px;
+  width: 25px;
+  border-bottom: 5px solid #fff;
+}
+.third-line::before {
+  content: ".";
+  color: transparent;
+  position: absolute;
+  left: -40px;
+  bottom: -5px;
+  width: 25px;
+  border-bottom: 5px solid #fff;
+}
+.star-wars_box .first-line {
+  display: none;
+}
+.star-wars_box .second-line {
+  transform: rotate(45deg);
+  top: 34px;
+}
+.star-wars_box .third-line {
+  transform: rotate(-45deg);
+  right: 20px;
+  top: 30px;
+}
+.star-wars_box.active .first-line {
+  display: block;
+  margin-bottom: 40px;
+}
+.star-wars_box.active .second-line {
+  transform: rotate(0deg);
+  top: 0;
+  transition: all 0.5s ease 0s;
+  margin-bottom: 15px;
+}
+.star-wars_box.active .third-line {
+  transform: rotate(0deg);
+  right: 0px;
+  bottom: 0px;
+  transition: all 0.5s ease 0s;
+}
+.star-wars_box:hover > .second-line {
+  border-bottom: 5px solid rgb(240, 215, 215);
+  box-shadow: 0px 0px 15px 7px rgb(255, 0, 0, 0.8);
+}
+.star-wars_box:hover > .third-line {
+  border-bottom: 5px solid rgb(178, 224, 193);
+  box-shadow: 0px 0px 15px 7px rgba(7, 240, 7, 0.8);
+}
+
+/* newton section */
+
+.newton {
+  margin-top: 50px;
+}
+.newton-box {
+  border-top: 5px solid black;
+  max-width: 400px;
+  margin: 0 auto;
+}
+li {
+  position: relative;
+  display: block;
+  float: left;
+  list-style-type: none;
+  width: 50px;
+  height: 50px;
+  margin-top: 80px;
+  border-radius: 50%;
+}
+li:first-child {
+  background: rgb(26, 24, 49);
+}
+li:first-child:after {
+  content: "";
+  background: rgb(26, 24, 49);
+}
+li:nth-child(2) {
+  background: rgb(26, 24, 49);
+}
+li:nth-child(2):after {
+  content: "";
+  background: rgb(26, 24, 49);
+}
+li:nth-child(3) {
+  background: radial-gradient(at 0 53%, rgb(26, 24, 49), rgb(139, 62, 62));
+}
+li:nth-child(3):after {
+  content: "";
+  background: radial-gradient(at 0 53%, rgb(26, 24, 49), rgb(139, 62, 62));
+}
+li:nth-child(4) {
+  background: radial-gradient(at 0 -50%, rgb(26, 24, 49), rgb(175, 54, 54));
+}
+li:nth-child(4):after {
+  content: "";
+  background: radial-gradient(at 0 -50%, rgb(26, 24, 49), rgb(175, 54, 54));
+}
+li:nth-child(5) {
+  background: rgb(167, 49, 45);
+}
+li:nth-child(5):after {
+  content: "";
+  background: rgb(167, 49, 45);
+}
+li:nth-child(6) {
+  background: rgb(182, 37, 32);
+}
+li:nth-child(6):after {
+  content: "";
+  background: rgb(182, 37, 32);
+}
+li:last-child {
+  background: rgb(197, 33, 28);
+}
+li:last-child:after {
+  content: "";
+  background: rgb(197, 33, 28);
+}
+li::before {
+  position: absolute;
+  display: block;
+  content: " ";
+  width: 1px;
+  height: 80px;
+  left: 24px;
+  top: -80px;
+  background-color: #6f6f6f;
+}
+li::after {
+  position: absolute;
+  display: block;
+  content: " ";
+  width: 96%;
+  margin: 0 2%;
+  height: 10px;
+  left: 0px;
+  bottom: -50px;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+li:first-child,
+li:last-child {
+  transform-origin: 24px -80px;
+}
+li:first-child {
+  animation: bounceleft 1.2s ease-out infinite;
+}
+@keyframes bounceleft {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(12deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+li:last-child {
+  animation: bounceright 1.2s ease-out infinite 1.2s;
+}
+@keyframes bounceright {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-12deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
