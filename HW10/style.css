@@ -84,6 +84,12 @@ header {
   right: -8px;
   top: -4px;
 }
+@media (max-width: 767px) {
+  .input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
 
 /*info-section*/
 
@@ -183,5 +189,12 @@ span.triangle {
   .my-image-list {
     margin-left: -25px;
     margin-right: -25px;
+  }
+}
+@media (max-width: 425px) {
+  .my-image-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
