@@ -197,4 +197,7 @@ span.triangle {
     justify-content: center;
     align-items: center;
   }
+  .my-image-list .col-4 {
+    max-width: 100%;
+  }
 }
