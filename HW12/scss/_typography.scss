@@ -1,0 +1,26 @@
+/*typography*/
+
+h1 {
+  font-size: 3.1rem;
+  line-height: 1.32;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.33;
+  margin-bottom: 16px;
+}
+h4 {
+  line-height: 1.62;
+  margin-bottom: 6px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #091133;
+  font-weight: 500;
+}

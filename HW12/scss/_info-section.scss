@@ -1,0 +1,36 @@
+.info-section {
+  padding-top: 109px;
+  padding-bottom: 109px;
+  &__heading-box {
+    margin-top: 51px;
+  }
+  &__text:nth-child(3) {
+    padding-top: 26px;
+    padding-bottom: 80px;
+  }
+  &__text {
+    line-height: 1.62;
+  }
+}
+.card {
+  display: flex;
+  &__img {
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #5d6970;
+  }
+  &__box {
+    margin-bottom: 20px;
+  }
+}
+.image-box img {
+  max-width: 100%;
+}
+@media (max-width: 1200px) {
+  .info-section {
+    text-align: center;
+  }
+}

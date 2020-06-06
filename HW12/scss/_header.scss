@@ -1,0 +1,45 @@
+header {
+  padding-top: 12px;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  .btn {
+    min-width: 160px;
+  }
+}
+@media (max-width: 1000px) {
+  .btn-box {
+    text-align: center;
+  }
+}
+.logo {
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.46;
+  color: #37447e;
+  text-align: center;
+
+  a {
+    color: #37447e;
+  }
+}
+
+//nav
+.nav-bar {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: #929ecc;
+    padding-right: 10px;
+  }
+  &__link--active {
+    color: #091133;
+  }
+}

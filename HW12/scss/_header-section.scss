@@ -1,0 +1,27 @@
+.header-section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px 20px 0 20px;
+  background-image: url(../image/section-1/bg-section-1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+}
+.heading-box p:nth-child(3) {
+  padding-top: 30px;
+  padding-bottom: 69px;
+}
+.btn-box__btn {
+  margin-right: 30px;
+  margin-bottom: 20px;
+  min-width: 189px;
+}
+@media (max-width: 600px) {
+  .header-section {
+    background-image: none;
+  }
+  .heading-box h1 {
+    text-align: center;
+  }
+}
