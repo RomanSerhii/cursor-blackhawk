@@ -5,15 +5,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: 68px;
   padding-bottom: 47px;
   border-bottom: 1px solid #cdd1d4;
+}
+.footer__top .logo {
+  margin-right: 10px;
 }
 .copyright {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.71;
   color: #939ea4;
+  margin-right: 10px;
 }
 .footer__btn--sm {
   min-width: 109px;
@@ -50,5 +55,12 @@
   .price-section__box {
     padding-top: 70px;
     padding-bottom: 50px;
+  }
+}
+@media (max-width: 339px) {
+  .footer__btn-box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
   }
 }
