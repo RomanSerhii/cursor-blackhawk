@@ -45,7 +45,7 @@ abbr, acronym { border: 0; }
 
 .bg-reason4 { width: 48px; height: 48px; background: url("../css_sprites.png") -134px -10px; margin-left: auto; margin-right: auto; }
 
-img { width: auto; height: auto; }
+img { width: 100%; }
 
 html, body, .wrapper { min-height: 100% !important; height: 100%; }
 
@@ -57,13 +57,15 @@ body { font-family: "HelveticaNeueLight"; font-size: 14px; letter-spacing: 0.05e
 
 a { color: inherit; text-decoration: none; }
 
-header { height: 80px; background-color: #ffdc00; }
+header { min-height: 80px; background-color: #ffdc00; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 header .logo { float: left; height: 55px; width: auto; margin-top: 12px; }
 
 header .phone { display: block; text-align: right; font-family: "HelveticaNeueMedium"; padding-right: 2px; margin-bottom: 5px; margin-top: 12px; }
 
 .right-block { float: right; }
+
+@media (max-width: 370px) { .right-block { float: left; } }
 
 .left-block { float: left; }
 
@@ -97,11 +99,13 @@ button { outline: none; border: none; cursor: pointer; border-radius: 8px; }
 
 .main-screen .h1 { font-size: 36px; font-family: "HelveticaNeueBold"; text-transform: uppercase; letter-spacing: 0.05em; line-height: 72px; }
 
+@media (max-width: 530px) { .main-screen .h1 { font-size: 20px; line-height: 36px; } }
+
 .main-screen .price { position: absolute; top: calc(50% + 50px); right: 50px; }
 
 .main-screen .description { font-size: 24px; margin-top: 40px; line-height: 36px; font-family: "HelveticaNeueThin"; letter-spacing: 0.08em; }
 
-.main-screen .left-block, .main-screen .right-block { display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 45%; min-width: 525px; position: relative; }
+.main-screen .left-block, .main-screen .right-block { display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 45%; max-width: 525px; position: relative; }
 
 .main-screen .right-block { text-align: right; }
 
@@ -131,7 +135,7 @@ button { outline: none; border: none; cursor: pointer; border-radius: 8px; }
 
 .about .description:last-child { width: 29%; text-align: center; }
 
-.about .description:last-child img { width: auto; height: 100%; display: block; margin: 0 auto; max-width: 350px; max-height: 200px; }
+.about .description:last-child img { height: 100%; display: block; margin: 0 auto; max-width: 350px; max-height: 200px; }
 
 .reasons { font-size: 0; }
 
@@ -159,6 +163,8 @@ button { outline: none; border: none; cursor: pointer; border-radius: 8px; }
 
 #video iframe { max-width: 800px; width: 100%; height: 380px; }
 
+@media (max-width: 400px) { .how p { font-size: 12px; } }
+
 .how { text-align: center; font-size: 0; }
 
 .how .h2 { margin-bottom: 30px; }
@@ -166,8 +172,6 @@ button { outline: none; border: none; cursor: pointer; border-radius: 8px; }
 .how .btn-order { margin-top: 40px; }
 
 .how .full-width { width: 100%; height: auto; }
-
-.how .small-height-fix { height: 160px; width: auto; }
 
 .how .left-block, .how .right-block { width: calc(50% - 100px); position: relative; margin-left: 24px; margin-right: 24px; float: none; display: inline-block; font-size: 18px; text-transform: uppercase; font-family: "HelveticaNeueMedium"; }
 
