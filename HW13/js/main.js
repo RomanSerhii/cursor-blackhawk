@@ -1,3 +1,3 @@
-'use strict';
-
-console.log('test');
+$(window).on("load", () => {
+  $(".preloader-container").fadeOut(500);
+});
