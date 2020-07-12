@@ -63,6 +63,27 @@ body {
   display: flex;
   align-items: center;
 }
+img.rot {
+  animation: 2s linear 0s normal none infinite running rot;
+  -webkit-animation: 2s linear 0s normal none infinite running rot;
+  width: 100px;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .logo-text {
   display: block;
   font-size: 24px;
